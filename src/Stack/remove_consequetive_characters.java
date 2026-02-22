@@ -11,7 +11,7 @@ public class remove_consequetive_characters {
             if(st.isEmpty())st.push(ch);
             else{
                 char top=st.peek();
-                if(top!=ch)st.push(ch);;
+                if(top!=ch)st.push(ch);
             }
         }
 
