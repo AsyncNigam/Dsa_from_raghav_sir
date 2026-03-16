@@ -58,7 +58,9 @@ public class implementation {
 //        System.out.println(levels(a));
 //        levelOrder(a);
 
-        level_Order_Linewise(a);
+//        level_Order_Linewise(a);
+
+        KthLevel(a,0,2);
     }
 
 
@@ -159,6 +161,14 @@ public class implementation {
             if(front.node.right!=null)q.add(new Pair(front.node.right,front.level+1));
         }
         System.out.println();
+    }
+
+//    printing the nodes at aspecific level
+    static void KthLevel(Node root,int level,int k){
+        if(root==null)return;
+        if(level==k) System.out.print(root.val+" ");
+        KthLevel(root.left,level+1,k);
+        KthLevel(root.right,level+1,k);
     }
 
 }
