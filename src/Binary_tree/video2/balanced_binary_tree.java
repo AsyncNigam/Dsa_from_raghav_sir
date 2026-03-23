@@ -1,8 +1,27 @@
 package Binary_tree.video2;
 
+class TreeNode {
+    int val;
+   TreeNode left;
+  TreeNode right;
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
+
 public class balanced_binary_tree {
 //    basic approach with recursion in recursion
-//    balanced b tree means maximum level difference between any 2 sub trees either 0 or 1 not more than that.
+//    balanced b tree means maximum level difference between any 2 subtrees either 0 or 1 not more than that.
 //    so we are going to each node then finding the levels , if level difference>1 then return false , if reached to null then true, then going for the subtrees;
 //    class Solution {
 //        public boolean isBalanced(TreeNode root) {
