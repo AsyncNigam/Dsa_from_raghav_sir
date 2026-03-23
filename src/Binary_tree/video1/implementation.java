@@ -13,16 +13,7 @@ class Node {
     }
 }
 
-//this pair we have created for linewise level order printing of the tree
-class Pair {
-    Node node;
-    int level;
 
-    Pair(Node node,int level) {
-        this.node = node;
-        this.level=level;
-    }
-}
 
 
 public class implementation {
@@ -143,6 +134,16 @@ public class implementation {
         System.out.println();
     }
 
+    //this pair we have created for linewise level order printing of the tree
+    static class Pair {
+        Node node;
+        int level;
+
+        Pair(Node node,int level) {
+            this.node = node;
+            this.level=level;
+        }
+    }
 //    levelOrder linewise printing
     static void level_Order_Linewise(Node root){
         Queue<Pair> q=new LinkedList<>();

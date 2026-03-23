@@ -6,7 +6,6 @@ public class symmetric_tree {
 
 //    class Solution {
 //        public boolean isSymmetric(TreeNode root) {
-//
 //            TreeNode copy=copyTree(root);
 //            return isSameTree(root,invertTree(copy));
 //        }
